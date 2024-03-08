@@ -1,13 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Rock-Paper-Scissors</title>
-</head>
-<body>
-    
-</body>
-<script src="rps.js"></script>
+    <style>
+        body{
+            background-color: rgb(235, 201, 115);
+            font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+          "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+        }
+      .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 15px;
+      }
+      button {
+        height: 100px;
+        width: 300px;
+        text-align: center;
+        font-size: 30px;
+        font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+          "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+        border: 2px solid white;
+        border-radius: 5%;
+      }
+      #rock {
+        background-color: rgb(71, 15, 15);
+        color: white;
+      }
+      #scissors {
+        background-color: darkcyan;
+        color: white;
+      }
+      #rslt {
+        text-align: center;
+        font-size: 50px;
+        font-weight: bold;
+        color: black;
+      }
+      #reset{
+          height: 40px;
+          width: 80px;
+          font-size: 15px;
+          background-color: red;
+          color: white;
+          border: 2px solid black;
+      }
+      #winner {
+          font-weight: bold;
+          font-size: 40px;
+          color: green;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div id="title">
+        <h1>Rock-Paper-Scissors</h1>
+      </div>
+
+      <div id="buttons">
+        <button id="rock">ROCK</button>
+        <button id="paper">PAPER</button>
+        <button id="scissors">SCISSORS</button>
+      </div>
+
+      <div id="rslt">
+          
+      </div>
+      <p id="winner"></p>
+
+      <button id="reset">RESET</button>
+    </div>
+  </body>
+  <script src="rps.js"></script>
 </html>
